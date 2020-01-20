@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navigation from "./containers/Navigation";
+import Navbar from "./containers/Navbar";
 import NotesList from "./components/notes/NotesList";
 import AddNote from "./components/notes/AddNote";
 import User from "./components/user/AddUser";
@@ -10,7 +11,7 @@ import User from "./components/user/AddUser";
 function App() {
   return (
     <Router>
-      <Navigation />
+      <Navbar />
       <Switch>
         <Route exact path="/" component={NotesList} />
         <Route path="/edit/:id" component={AddNote} />
