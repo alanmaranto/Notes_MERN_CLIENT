@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Users from "../views/Users";
+import Users from "../../views/Users";
 
 const initialState = {
   users: [],
