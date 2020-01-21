@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./containers/Navbar";
 import NotesList from "./components/notes/NotesList";
 import AddNote from "./components/notes/AddNote";
-import User from "./components/user/AddUser";
+import User from "./containers/User";
 
 function App() {
   return (
